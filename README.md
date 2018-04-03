@@ -2,8 +2,9 @@
 My time in the Piscine
 over all grades will be posted soon with daily reports.
 
-day_number | folder_name | grade_given_by_MOULINETTE | #notes if any#
-turn_in_directory: (grade) | ect... ;
+Row 1--day_number | folder_name | grade_given_by_MOULINETTE | #notes if any#
+
+Row 2--turn_in_directory: (grade) | ect... ;
 
 DAY00 | day00 | 10%
 ex01: OK | ex02: OK | ex03: KO | ex04: OK | ex05: OK | ex06: OK | ex07: OK | ex08: KO | ex09: OK | ex10: OK | ex11: Nothing turned in ;
