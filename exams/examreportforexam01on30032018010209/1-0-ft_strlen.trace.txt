@@ -1,0 +1,88 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r1p13.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Thu Mar 29 18:23:22 PDT 2018
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.42.1)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.42.1)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/piscine-c-exam01/exam_20180330/saolivei
+
+= Git history ==================================================================
+$> git -C /var/folders/nw/bb61tfcj6tb_zcxzk257qvjh0000gp/T/tmpiKZ66M/user log --pretty='%H - %an, %ad : %s'
+e865edab6568b1a2883c67cb49afcf4ea2e33af1 - Exam 42, Thu Mar 29 18:22:35 2018 -0700 : please work!
+8a1442851d92e17ca3b6924bdeecca11e5f782e7 - Exam 42, Thu Mar 29 18:12:24 2018 -0700 : ft_print_numbers level 0
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/nw/bb61tfcj6tb_zcxzk257qvjh0000gp/T/tmpiKZ66M/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  456 Mar 29 18:23 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Mar 29 18:23 ft_print_numbers
+drwxr-xr-x  3 deepthought  deepthought  102 Mar 29 18:23 ft_strlen
+
+/var/folders/nw/bb61tfcj6tb_zcxzk257qvjh0000gp/T/tmpiKZ66M/user/ft_print_numbers:
+total 8
+-rw-r--r--  1 deepthought  deepthought  82 Mar 29 18:23 ft_print_numbers.c
+
+/var/folders/nw/bb61tfcj6tb_zcxzk257qvjh0000gp/T/tmpiKZ66M/user/ft_strlen:
+total 8
+-rw-r--r--  1 deepthought  deepthought  96 Mar 29 18:23 ft_strlen.c
+ 
+= ft_strlen ====================================================================
+$> gcc -Wextra -Wall -Werror ft_strlen.c main.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./0ymv3huteyno4su62oernwvz ""
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./l19f1giqugo2qq3f71ovuo3i "	"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./wgzh0tike1c9zuraedgeo0zs "EgcM3yAaTk1nNP4d"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./mt8trlndkqhcnul6rcciumdm "y0fNuD"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./b7mc5679vknfcg3pzhe7wx3r "pxvs3PcCOV2"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./c0gvcutxvh9w8vmsexajswc3 "Qe9Xksg 5ogF2UM8nG 6tLuEleTFr4 pQRLT1eqWzHBg9M VKFMSTvZb BUfhu18vKzL3g2 Vf4Em8tJ FR1QrmtZzPOoBD cFxIH7S0V8seL gn5LT 3XDGNoW8cJM92 qUf39DQt 7RUKSGx oefrgmGBI dfIJKe"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./oi38hxuu7cbw3h18zx4m1j1e "bdY86cLG VJ6fmPD5r1OdZ jxR GuOdc uFg C2pP7ocJBKh kOPeogU3hyp UXZ971fF PNlfX hPUgbdkVuAKTpSs6f 4ENFHG3sewpauLC iST3Q0vR ESJXhjdMs1vI4GR9 1TqndrP H9SVjPs7OeqDRY8 9qFS4VeYoGUcub 6Xv85yl vxUMlrEiRNd6FHGq0"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./3una6wzxfbs5wayq9irxo2qo "t6IMpNmiGP8Al3SO kBV9fCMuR 589YLBVAFtz2wlpR FPynTs29ObiZxtgUh p0O3nMF2mgoy7a tY03pcS vKNt1iJ6X57uZn mt7 Wu76aQBdnj jputbd1 cJwHVnd VYwkidTp5G"
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

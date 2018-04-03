@@ -1,0 +1,76 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r1p13.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Thu Mar 29 18:50:57 PDT 2018
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.42.1)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.42.1)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/piscine-c-exam01/exam_20180330/saolivei
+
+= Git history ==================================================================
+$> git -C /var/folders/nw/bb61tfcj6tb_zcxzk257qvjh0000gp/T/tmpH92AWn/user log --pretty='%H - %an, %ad : %s'
+ed6b538219efa0f35ef4a0f78825b45f4ffa205a - Exam 42, Thu Mar 29 18:50:35 2018 -0700 : please for the love of atoi
+e865edab6568b1a2883c67cb49afcf4ea2e33af1 - Exam 42, Thu Mar 29 18:22:35 2018 -0700 : please work!
+8a1442851d92e17ca3b6924bdeecca11e5f782e7 - Exam 42, Thu Mar 29 18:12:24 2018 -0700 : ft_print_numbers level 0
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/nw/bb61tfcj6tb_zcxzk257qvjh0000gp/T/tmpH92AWn/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  697 Mar 29 18:50 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Mar 29 18:50 ft_atoi
+drwxr-xr-x  3 deepthought  deepthought  102 Mar 29 18:50 ft_print_numbers
+drwxr-xr-x  3 deepthought  deepthought  102 Mar 29 18:50 ft_strlen
+
+/var/folders/nw/bb61tfcj6tb_zcxzk257qvjh0000gp/T/tmpH92AWn/user/ft_atoi:
+total 8
+-rw-r--r--  1 deepthought  deepthought  435 Mar 29 18:50 ft_atoi.c
+
+/var/folders/nw/bb61tfcj6tb_zcxzk257qvjh0000gp/T/tmpH92AWn/user/ft_print_numbers:
+total 8
+-rw-r--r--  1 deepthought  deepthought  82 Mar 29 18:50 ft_print_numbers.c
+
+/var/folders/nw/bb61tfcj6tb_zcxzk257qvjh0000gp/T/tmpH92AWn/user/ft_strlen:
+total 8
+-rw-r--r--  1 deepthought  deepthought  96 Mar 29 18:50 ft_strlen.c
+ 
+= ft_atoi ======================================================================
+$> gcc -Wextra -Wall -Werror main.c ft_atoi.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./urmvufzq6rylyhd762jy7b2s 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./0myxr9zwb4mya87owheoqn7s "21" "2313"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./yh09b7eo0b2stqsqfwarggfx 2147483647
+$> diff -U 3 user_output_test3 test3.output | cat -e
+--- user_output_test3	2018-03-29 18:50:58.000000000 -0700$
++++ test3.output	2018-03-29 18:50:58.000000000 -0700$
+@@ -1 +1 @@$
+-147483647$
+\ No newline at end of file$
++2147483647$
+\ No newline at end of file$
+
+Diff KO :(
+Grade: 0
+
+= Final grade: 0 ===============================================================

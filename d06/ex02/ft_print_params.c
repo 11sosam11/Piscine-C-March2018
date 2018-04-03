@@ -6,7 +6,7 @@
 /*   By: saolivei <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/20 18:57:49 by saolivei          #+#    #+#             */
-/*   Updated: 2018/03/20 19:43:04 by saolivei         ###   ########.fr       */
+/*   Updated: 2018/03/21 22:17:01 by saolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int		main(int argc, char **argv)
 	int j;
 
 	j = 1;
-	while (argv[j][0] != '\0')
+	while (j < argc)
 	{
 		i = 0;
 		while (argv[j][i] != '\0')
